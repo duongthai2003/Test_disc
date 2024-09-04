@@ -2,6 +2,7 @@ import Image from "next/image";
 import SlideRightIcon from "../../public/image/[disc]/slideIcon.png";
 import SlideLefttIcon from "../../public/image/[disc]/slideLeftIcon.png";
 import DiscText from "./DiscText";
+import { anton } from "../page";
 
 const Slide = () => {
   return (
@@ -10,7 +11,9 @@ const Slide = () => {
         <Image src={SlideLefttIcon} alt=" " />
       </div>
       <div className="flex items-center flex-col">
-        <div className="text-center font-sans text-[65px] leading-[75px] font-bold tracking-tighter ">
+        <div
+          className={`text-center text-[65px] leading-[75px] font-bold tracking-tight ${anton.className} `}
+        >
           <h1>Khám Phá Tính Cách Của Bạn</h1>
           <h1>
             Với Trắc Nghiệm

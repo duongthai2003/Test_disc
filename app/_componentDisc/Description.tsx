@@ -1,12 +1,15 @@
 import Image from "next/image";
 import DISC from "../../public/image/[disc]/DISC.png";
 import { DiscIcon } from "@/public/Icon/Icons";
+import { anton } from "../page";
 
 const Description = () => {
   return (
     <div className="grid grid-cols-2 mt-[100px] ">
       <div className=" relative  ">
-        <div className=" font-bold text-[51px] leading-[50px] font-sans absolute left-2  ">
+        <div
+          className={`font-bold text-[51px] leading-[50px] ${anton.className} absolute left-2`}
+        >
           <h1>Trắc nghiệm tính cách </h1>
           <h1>DISC là gì?</h1>
         </div>

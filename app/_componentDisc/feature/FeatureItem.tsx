@@ -1,3 +1,4 @@
+import { anton } from "@/app/page";
 import { ChevronDown } from "lucide-react";
 
 type Props = {
@@ -25,7 +26,7 @@ export const FeatureItem = ({
         className="flex justify-between items-center cursor-pointer"
         onClick={onClick}
       >
-        <div className=" font-bold flex gap-1 text-[24px] font-sans ">
+        <div className={`font-bold flex gap-1 text-[24px] ${anton.className}`}>
           <h1 className={` text-[${titleColor}]`}>{title}</h1>
           <span>{subTitle}</span>
         </div>
